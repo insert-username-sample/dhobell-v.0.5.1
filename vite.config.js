@@ -12,9 +12,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          components: ['./src/components/**/*.jsx'],
-          pages: ['./src/pages/**/*.jsx']
+          vendor: ['react', 'react-dom', 'react-router-dom']
         },
         assetFileNames: 'assets/[name].[hash].[ext]',
         chunkFileNames: 'assets/[name].[hash].js',
